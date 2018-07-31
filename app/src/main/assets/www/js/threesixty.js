@@ -26,7 +26,7 @@ $(document).ready(function () {
 			spinner,
 	
 			// Stores the total amount of images we have in the sequence
-			totalFrames = 50,
+			totalFrames = 1,
 			// The current frame value of the image slider animation
 			currentFrame = 0,
 			// Stores all the loaded image objects
@@ -74,7 +74,7 @@ $(document).ready(function () {
 		// Creates a new <li>
 		var li = document.createElement("li");
 		// Generates the image file name using the incremented "loadedImages" variable
-		var imageName = "img/threesixty_" + (loadedImages + 1) + ".jpg";
+		var imageName = "img/threesixty_" + (loadedImages + 1) + ".png";
 		/*
 			Creates a new <img> and sets its src attribute to point to the file name we generated.
 			It also hides the image by applying the "previous-image" CSS class to it.
