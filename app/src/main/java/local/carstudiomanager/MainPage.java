@@ -50,6 +50,8 @@ import android.util.Log;
 
 // classes needed to launch navigation UI
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 
 import com.mapbox.services.android.navigation.ui.v5.NavigationLauncher;
@@ -100,6 +102,9 @@ public class MainPage extends AppCompatActivity implements LocationEngineListene
 
         super.onCreate(savedInstanceState);
         Mapbox.getInstance(this, getString(R.string.access_token));
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
         mapView = (MapView) findViewById(R.id.mapView);
