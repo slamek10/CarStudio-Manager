@@ -2,7 +2,7 @@
     <string name="app_name">CarStudio Manager</string>
 
     <string name="title_activity_main">main</string>
-    <string name="initial_speed">0.0 m/s</string>
 
     <string name="access_token" translatable="false">pk.eyJ1Ijoic2xhbWVrMTAiLCJhIjoiY2prY3JocWo3MzA1aTN3cGFkaTZweGhxYSJ9.XX0Xl-H8Uzx3VM6q1o0jiw</string>
+
 </resources>
